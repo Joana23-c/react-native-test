@@ -1,27 +1,39 @@
-#User stories
+# User stories
 
-
-##User Story 1 : Regjistimi dhe log-in :
-
+## User Story 1 : Regjistimi dhe log-in :
 
 **-Si nje user , dua te regjistrohem si nje perdorues duke vendour nje username, email-in dhe nje password, ne menyre qe te mund te krijoj nje account.**
 
+Acceptace Criteria :
+
+1-Perdoruesi duhet te plotesoje fushat username, email dhe password me te dhena valide dhe te klikoje butonin SIGN UP.
+
+2-Shfaqet nje mesazh gabimi nese: Nje nga fushat lihet bosh ose username ose email permbajne vetem numra
+
+**-Si nje user dua te notifikohem cila nga kredencialet eshte e gabuar , ne menyre qe te mos me duhet te ndryshoj te gjitha krendencialet.**
 
 Acceptace Criteria :
-1-Perdoruesi duhet te plotesoje fushat username, email dhe password me te dhena valide dhe te klikoje butonin SIGN UP.
-2-Shfaqet nje mesazh gabimi nese: Nje nga fushat lihet bosh ose username ose email permbajne vetem numra
--Si nje user dua te notifikohem cila nga kredencialet eshte e gabuar , ne menyre qe te mos me duhet te ndryshoj te gjitha krendencialet.
-Acceptace Criteria :
+
 1- Ne rast se eshte dhene nje username,email apo password bosh jepet ne mesazh qe "Nuk duhet te lihen fusha bosh"
+
 2-Ne rast se eshte dhene nje username me numra apo me simbole ne mesazh jepet qe "Username duhet te permbaje vetem shkronja".
+
 3-Inputi i emailit duhet te permbaje vetem shkrona,numra,@ dhe . .
--Si nje user dua te keme nje mesazh qe konfirmon regjistrimin tim te sakte ne menyre qe bej log in.
+
+**-Si nje user dua te keme nje mesazh qe konfirmon regjistrimin tim te sakte ne menyre qe bej log in.**
+
 Acceptace Criteria :
+
 1- Ne momentin qe regjistrimi kryhet me sukses, shfaqet nje mesazh per suksesin e procesit dhe useri regjistrohet ne log in per tu loguar ne applikacion.
--Si nje user, dua qe kredencialet e mija te ruhen nje local storage , ne menyre qe te dhenat e mia te jen avalibe edhe pas pefundimit te sessionit.
+
+**-Si nje user, dua qe kredencialet e mija te ruhen nje local storage , ne menyre qe te dhenat e mia te jen avalibe edhe pas pefundimit te sessionit.**
+
 Acceptace Criteria :
+
 1-Të dhënat e përdoruesit si username ruhen në local storage pas log-in.
-Home Page
+
+## Home Page
+
 -Si user , une dua te keme nje mesazh mireserdhje dhe nje fjali motivuese, ne menyre qe te ndjej se faqja eshte e personalizuar dhe interesante.
 Acceptace Criteria :
 1- Ne fillim te home page pas logos dhe ikones se setting do te shfaqet nje mesazh mireseardhje : "Pershendetje (emri i user-it)!" dhe nje fjali motivuese apo kuriozitet ne lidhje me ushqimet.
