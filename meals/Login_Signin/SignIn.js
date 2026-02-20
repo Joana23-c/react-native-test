@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Platform } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export default function SignIn() {
+export default function SignIn({ navigation }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignIn = () => {
+  const handleSignIn = async () => {
     const trimmedEmail = email.trim();
     const trimmedPassword = password.trim();
 
@@ -19,13 +20,37 @@ export default function SignIn() {
       return;
     }
 
-    if (Platform.OS === 'web') {
-      window.alert('Jeni kyçur me sukses!');
-    } else {
-      Alert.alert('Sukses', 'Jeni kyçur me sukses!');
+     try {
+      // Kontrollo në AsyncStorage nëse email-i ekziston
+      const storedEmail = await AsyncStorage.getItem('userEmail');
+
+      if (storedEmail === trimmedEmail) {
+        // Email ekziston -> alert dhe rute te Login
+        if (Platform.OS === 'web') {
+          window.alert('Ky email është regjistruar tashmë! Shko te Login.');
+        } else {
+          Alert.alert('Info', 'Ky email është regjistruar tashmë! Shko te Login.');
+        }
+        navigation.navigate('Login');
+        return;
+      }
+
+      // Email nuk ekziston -> ruaj të dhënat
+      await AsyncStorage.setItem('userEmail', trimmedEmail);
+      await AsyncStorage.setItem('userPassword', trimmedPassword);
+
+      if (Platform.OS === 'web') {
+        window.alert('Jeni regjistruar me sukses!');
+      } else {
+        Alert.alert('Sukses', 'Jeni regjistruar me sukses!');
+      }
+
+      // Rute te Login pas regjistrimit
+      navigation.navigate('Login');
+
+    } catch (error) {
+      console.log('Gabim AsyncStorage:', error);
     }
-    console.log(`email : ${trimmedEmail}`);
-    console.log(`password : ${trimmedPassword}`);
   };
 
   return (
