@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, StyleSheet, Platform,Text,TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
    
-export default function SignIn({ navigation }) {
+export default function SignIn() {
+  const navigation = useNavigation();
+
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -151,10 +154,10 @@ const clearAllStorage = async () => {
 };
 
 const userNamemcheck = (str) =>{
-    return /^[a-zA-Z]\S*$/.test(str);
+    return /^[a-zA-Z][a-zA-Z0-9]*$/.test(str); //vetem shkronja dhe numra, por duhet te filloje patjeter me nje shkronje
 }
 const emailCheck = (str) => {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(str);
+  return /^[a-zA-Z0-9](?!.*\.\.)[a-zA-Z0-9._-]*[a-zA-Z0-9]?@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*\.[a-zA-Z]{2,}$/.test(str);
 }
 const passCheck = (str) => {
   return /^[\w!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+$/.test(str);
