@@ -64,8 +64,14 @@ Me kete komponent menaxhoj regjistrimin e perdouesve te aplikacionit. Kam perdor
 
 Me ane te **TouchableOpacity** kam krijuar nje link qe useri te mund te ridrejtohet ne log-in nese ka nje account.
 
+<img width="956" height="902" alt="image" src="https://github.com/user-attachments/assets/55351cc4-f9a1-438a-b72d-3336d9e19ac4" />
+
+
 **Login.js**
 Me kete komponent bej te mundur logimin e perdoruesve ne aplikacion duke perdorur emaili dhe passord. Pasi useri jep te kredencialet i kontrolloj nese ato jane aktualisht ne `AsyncStorage'. Pasi useri logohet ne menyre te suksesshme, vendos username ne UserContext dhe useri ridretohet ne homepage `home`.
+
+<img width="950" height="907" alt="image" src="https://github.com/user-attachments/assets/44b966c5-4224-4020-b51d-44cdb0e20928" />
+
 
 **data.json**
 
