@@ -71,7 +71,7 @@ Me ane te **TouchableOpacity** kam krijuar nje link qe useri te mund te ridrejto
 **Login.js**
 Me kete komponent bej te mundur logimin e perdoruesve ne aplikacion duke perdorur emaili dhe passord. Pasi useri jep te kredencialet i kontrolloj nese ato jane aktualisht ne `AsyncStorage'. Pasi useri logohet ne menyre te suksesshme, vendos username ne UserContext dhe useri ridretohet ne homepage `home`.
 
-<img width="950" height="907" alt="image" src="https://github.com/user-attachments/assets/44b966c5-4224-4020-b51d-44cdb0e20928" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/44b966c5-4224-4020-b51d-44cdb0e20928" />
 
 
 **data.json**
@@ -93,7 +93,7 @@ Klikimi ne TouchableOpacity e menaxoj me ane te funksionit `handlePress(id)` qe 
 
 Po ashtu ne homepage jane edhe imazhet e logos dhe settins qe jane te klikueshme dhe repsektivisht ridrejtojne userin ne homepage dhe setting page.
 
-<img width="912" height="910" alt="image" src="https://github.com/user-attachments/assets/96e59209-568c-4847-b60d-b11e94edc5cb" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/96e59209-568c-4847-b60d-b11e94edc5cb" />
 
 **Detail.js**
 Detail eshte komponenti qe pas klikimit t ne te nje karte ne homepage, useri ridjetohe ne kete faqe dhe jep te gjitha detajet e recetes se klikuar.
@@ -106,7 +106,7 @@ Pas shqfaqes se titullit, imazhit dhe elementeve te tjera kam krijuar butonat  `
 
 Funksion tjeter i rendesishem ne kete komponent eshte dhe ruajta e recetave te preferuara. Ne momentin qe klikohet butoni `Add To favourites` ekzekutohet funskioni `addtoFav` qe akseson elementin `favourites` te userit ne `AsyncStorage`, duke e gjetur objektin e userit nga username qe kam ruajtur ne `kontekts` (const { username } = useContext(UserContext);, const user = users.find(u =>u.username ===username );) dhe ruaj vektorin ne variablin `favourites` (favourites = user.favourites || [];). Pasi kam ruajtur vektorin shtoj ne te id e recetes (favourites.push(id);) dhe e ruaj vektorin e updatuar tek objekti i userit dhe me pas e ruaj key-in me vlern e bere update ne AsyncStrage.
 
-<img width="961" height="911" alt="image" src="https://github.com/user-attachments/assets/0a670ffa-3bce-4519-81ac-eca3fb8f3054" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/0a670ffa-3bce-4519-81ac-eca3fb8f3054" />
 
 **settings.js**
 Settings eshte komponenti tek i cili ridrejtohem nga klikimi i imaxhit te setting. Ky komponent permban dy butona : 
@@ -115,14 +115,14 @@ Settings eshte komponenti tek i cili ridrejtohem nga klikimi i imaxhit te settin
 
 2-LogOut qe ne onPress navigon ne LogIn duke e nxjerre userin nga applikacioni.
 
-<img width="957" height="676" alt="image" src="https://github.com/user-attachments/assets/636c0240-3a31-406d-a60d-0bbab88ab4fc" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/636c0240-3a31-406d-a60d-0bbab88ab4fc" />
 
 
 **fav.js**
 
 Fav eshte komponenti qe liston te gjitha paketat qe useri ka ruajtuar me ane te butonit Add to Favourites. Per ta bere kete listim fillimish me komponenti merr te dhenat e userit nga `AsyncStorage`. Vektorin e id-ve te recetave te preferuara (`favourites`) e ruaj ruhet ne state (`favs`). Per cdo id te marre nga Favourites therras koponentin `Card` per ti shfaqur te dhenat ne nje `ScrollView` veritkal.
 
-<img width="957" height="910" alt="image" src="https://github.com/user-attachments/assets/d9b10c2a-420b-42a5-9ce4-3bd9096b2f79" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/d9b10c2a-420b-42a5-9ce4-3bd9096b2f79" />
 
 
 
