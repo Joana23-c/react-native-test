@@ -40,7 +40,7 @@ Qellimi i aplikacionit eshte te ofroje nje eksperience te personalizuar dhe intu
           SignIn.js
 
 
-    /settings
+   /settings
           fav.js
           settings.js
 
