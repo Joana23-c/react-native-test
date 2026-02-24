@@ -18,40 +18,40 @@ export default function Fav() {
   const route = useRoute();
   const { username } = useContext(UserContext);
 
-  const { id } = route.params || {}; // ky rregullon ReferenceError
-  const [favs, setFavs] = useState([]);
-  const [currentItem, setCurrentItem] = useState(null);
-
-  useEffect(() => {
-    const loadData = async () => {
-      try {
-        const usersJSON = await AsyncStorage.getItem('users');
-        const users = usersJSON ? JSON.parse(usersJSON) : [];
-        const user = users.find(u => u.username === username);
-
-        if (user) {
-          setFavs(user.favourites || []);
-        }
-
-        if (id) {
-          const itemFound = data.find(d => d.id === id);
-          setCurrentItem(itemFound || null);
-        }
-      } catch (error) {
-        console.log('Error loading data:', error);
-      }
+    const gobacktohome = () => navigation.navigate('Home');
+    const gotoSettings = () => navigation.navigate('Settings');
+    const handlePress = (cardId) => {
+      navigation.navigate('Detail', { id: cardId });
     };
-    loadData();
-  }, [username, id]);
 
-  const handlePress = (cardId) => {
-    navigation.navigate('Detail', { id: cardId });
-  };
 
-  const gobacktohome = () => navigation.navigate('Home');
-  const gotoSettings = () => navigation.navigate('Settings');
+    const [favs, setFavs] = useState([]);
 
-  return (
+    useEffect(() => {
+      const loadUsers = async () => {
+        try {
+           const usersJSON = await AsyncStorage.getItem('users');
+           const users = usersJSON ? JSON.parse(usersJSON) : [];
+           console.log(users);
+
+           const user = users.find(u => u.username === username);
+           setFavs(user.favourites || []);
+           console.log(`vektori favourites :`);
+           console.log(favs);
+
+          } catch (error) {
+            console.log(error);
+          }
+        };
+        loadUsers();
+      }, []);
+
+      const recipesMap = Object.fromEntries(
+        data.map(item => [item.id, item])
+      );
+
+    
+  return(
     <View style={styles.body}>
       <View style={styles.container}>
         <View style={styles.img}>
@@ -63,16 +63,10 @@ export default function Fav() {
           </TouchableOpacity>
         </View>
 
-        {currentItem && (
-          <View style={styles.imagediv}>
-            <Image source={images[currentItem.image]} style={{ width: 400, height: 200, borderRadius: 10 }} />
-          </View>
-        )}
-
-        <View style={{justifyContet:'center', alignItems:'center',}}>
-        <ScrollView style={{ flex: 1, }}>
-          {favs.map(favId => {
-            const recipe = data.find(i => i.id === favId);
+       <View style={{flex: 1,justifyContent:'center', alignItems:'center',}}>
+         <ScrollView style={{ flex: 1, }}>
+           {favs.map(favId => {
+            const recipe = recipesMap[favId];
             if (!recipe) return null;
 
             return (
@@ -85,8 +79,9 @@ export default function Fav() {
                 />
               </TouchableOpacity>
             );
-          })}
-        </ScrollView></View>
+           })}
+         </ScrollView>
+      </View>
       </View>
     </View>
   );
