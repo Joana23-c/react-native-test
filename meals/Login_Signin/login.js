@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { View, TextInput, Button, Alert, Platform, StyleSheet,Text, TouchableOpacity} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
+import { useContext } from 'react';
+import { UserContext } from '../UserContext.js';
 
-export default function Login({ navigation }) {
+export default function Login() {
+  const { setUsername } = useContext(UserContext);
+  const navigation = useNavigation();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -37,7 +43,11 @@ export default function Login({ navigation }) {
       } else {
         Alert.alert('Sukses', `Mirësevini ${user.username}!`);
       }
-      navigation.navigate('Home', { username: user.username });
+
+      //vnedos ne kontekst usename
+       setUsername(user.username);
+      // navigation.navigate('Home', { username: user.username });
+      navigation.replace('Home');
     } else {
       if (Platform.OS === 'web') {
         window.alert('Email ose password i gabuar');

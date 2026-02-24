@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 0,
+        "image" : "Japanesecheesecake-scaled.jpg",
+        "title" : "Japanese Yogurt Cheesecake",
+        "desc": "This 2-ingredient Yogurt Chee-secake is a simple dessert that has creamy, cheesecake-like texture.",
+        "time": 15,
+        "about": "The Viral Japanese Yogurt Cheesecake combines Greek yogurt and Biscoff cookies for a creamy, cheesecake-like dessert. It balances fat, protein, and structure without requiring baking, making it easy to prepare. \nYou can customize the cheesecake using different yogurt flavors or cookie types for various twists. To achieve the best texture, use thick, strained yogurt like Greek or skyr, avoiding regular yogurt. This cheesecake can be made vegan or gluten-free by swapping ingredients. \nThis viral hack works because it balances fat, protein, and structure — the same fundamentals behind classic cheesecake  – just without the extra steps. Plain Greek yogurt brings that creamy, tangy cheesecake vibe while the Biscoff cookies  act as a natural thickener, soaking up moisture and giving the mixture its structure. Once it chills, the magic happens ✨. It firms up into a smooth, spoonable treat that feels like cheesecake without turning on the oven or breaking a sweat .",
+        "instruction": "Ingredients: \n200 g biscuits,\n80 g melted butter \n400 g thick plain yogurt \n80 g powdered sugar or honey \n10 g gelatin \n50 ml warm milk or water \n1 teaspoon vanilla extract \n1 tablespoon lemon juice (optional) \n\nInstructions:  \nCrush the biscuits and mix with melted butter, press the mixture into a pan and chill for 10–15 minutes. In a bowl, mix the yogurt, sugar or honey, vanilla, and lemon juice. Dissolve the gelatin in warm milk or water and stir until smooth.",
+        "category" : "Desert",
+        "top" : 1
+    },
+    {
+        "id" : 1,
+        "image" : "ItalianSushiRecipe.png",
+        "title" : "Italian Sushi Recipe",
+        "desc": "It’s basically like sushi’s cool cou-sin who went backpacking through Italia and came back with a killer tan  and even better stories.",
+        "time": 10,
+        "about": "The Viral Japanese Yogurt Cheesecake combines Greek yogurt and Biscoff cookies for a creamy, cheesecake-like dessert. It balances fat, protein, and structure without requiring baking, making it easy to prepare. \nYou can customize the cheesecake using different yogurt flavors or cookie types for various twists. To achieve the best texture, use thick, strained yogurt like Greek or skyr, avoiding regular yogurt. This cheesecake can be made vegan or gluten-free by swapping ingredients. \nThis viral hack works because it balances fat, protein, and structure — the same fundamentals behind classic cheesecake  – just without the extra steps. Plain Greek yogurt brings that creamy, tangy cheesecake vibe while the Biscoff cookies  act as a natural thickener, soaking up moisture and giving the mixture its structure. Once it chills, the magic happens ✨. It firms up into a smooth, spoonable treat that feels like cheesecake without turning on the oven or breaking a sweat .",
+        "instruction": "Ingredients: \n200 g biscuits,\n80 g melted butter \n400 g thick plain yogurt \n80 g powdered sugar or honey \n10 g gelatin \n50 ml warm milk or water \n1 teaspoon vanilla extract \n1 tablespoon lemon juice (optional) \n\nInstructions:  \nCrush the biscuits and mix with melted butter, press the mixture into a pan and chill for 10–15 minutes. In a bowl, mix the yogurt, sugar or honey, vanilla, and lemon juice. Dissolve the gelatin in warm milk or water and stir until smooth.",
+        "category" : "Italian",
+        "top" : 0
+
+    },
+    {
+        "id" : 2,
+        "image" : "Rice Paper Spanakopita.png",
+        "title" : "Rice Paper Spanakopita",
+        "desc": "The words “Rice Paper” and “Span-akopita” don’t even belong in the same sentence, because what in the cultural hybrid?!  ",
+        "time": 15,
+        "about": "As a Balkan, and die-hard carb lover, Spanakopita is one of my guilty pleasures. Cheesy, herby and crunchy – it’s my ideal meal. So when I saw that I could make one of my all time favorite dishes into a low-cal, gluten-free version, I hopped on quicker than a rumour spreads at a high school. \nThis Rice Paper Spanakopita feels like a cheat meal, but has the macros of a gym bro approved lean-and-clean lunch. Only 387 calories, 11 grams of carbs and 34 grams of protein. You could literally eat this every single day without feeling the slightest bit of guilt. Best of all, you only need 10 minutes of prep, then let the air fryer do its thing for another 10. I’m going to need my Greeks 🇬🇷 to take a deep breath when I say this: this Rice Paper Spanakopita may just be lighter, easier and crunchier than the OG.",
+        "instruction": "Ingredients: \nRice paper\n200 g baby spinach\n1 tablespoon olive oil\n1 small onion, finely chopped\n100 g cottage cheese (or ricotta/feta/vegan cheese of your choice)\n30 g Parmigiano Reggiano, grated\n\nInstructions: \nHeat the olive oil in a pan and sauté the onion until translucent.\nAdd the spinach and cook until wilted.\nRemove from heat and mix in the cottage cheese and Parmigiano Reggiano.\nSeason with a little salt to taste.Prepare the rice paper sheets by dipping one side into the whisked egg for only 5 seconds.",
+        "category" : "Desert",
+        "top" : 1 
+    },
+    {
+        "id" : 3,
+        "image" : "CottageCheeseEggs.png",
+        "title" : "Cottage Cheese Eggs",
+        "desc": "Eggs are nature’s perfect protein. Combine with cottage cheese and you have a match made in heaven ",
+        "time": 25,
+        "about": "As a Balkan, and die-hard carb lover, Spanakopita is one of my guilty pleasures. Cheesy, herby and crunchy – it’s my ideal meal. So when I saw that I could make one of my all time favorite dishes into a low-cal, gluten-free version, I hopped on quicker than a rumour spreads at a high school. \nThis Rice Paper Spanakopita feels like a cheat meal, but has the macros of a gym bro approved lean-and-clean lunch. Only 387 calories, 11 grams of carbs and 34 grams of protein. You could literally eat this every single day without feeling the slightest bit of guilt. Best of all, you only need 10 minutes of prep, then let the air fryer do its thing for another 10. I’m going to need my Greeks 🇬🇷 to take a deep breath when I say this: this Rice Paper Spanakopita may just be lighter, easier and crunchier than the OG.",
+        "instruction": "Ingredients: \nRice paper\n200 g baby spinach\n1 tablespoon olive oil\n1 small onion, finely chopped\n100 g cottage cheese (or ricotta/feta/vegan cheese of your choice)\n30 g Parmigiano Reggiano, grated\n\nInstructions: \nHeat the olive oil in a pan and sauté the onion until translucent.\nAdd the spinach and cook until wilted.Remove from heat and mix in the cottage cheese and Parmigiano Reggiano.Season with a little salt to taste.\nPrepare the rice paper sheets by dipping one side into the whisked egg for only 5 seconds.",
+        "category" : "Desert",
+        "top" : 0
+    }
+]

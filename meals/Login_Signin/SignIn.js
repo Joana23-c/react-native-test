@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import  { useState,useEffect } from 'react';
 import { View, TextInput, Button, StyleSheet, Platform,Text,TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
+import { Alert } from 'react-native';
    
 export default function SignIn() {
   const navigation = useNavigation();
@@ -12,8 +13,11 @@ export default function SignIn() {
     
       // clearAllStorage();
 
-    console.log('Storage para cfaredolloj nderhyrje :')
-    showAllStorage();
+    
+    useEffect(() => {
+      console.log('Storage para cfaredolloj nderhyrje :')
+     showAllStorage();
+     }, []);
 
   const handleSignIn = async () => {
     const trimmedEmail = email.trim();
@@ -21,7 +25,6 @@ export default function SignIn() {
     const trimmedPassword = password.trim();
 
     if (trimmedEmail === '' || !emailCheck(trimmedEmail) || trimmedPassword === '' || !passCheck(trimmedPassword) || trimmedUsername=== '' || !userNamemcheck(trimmedUsername)) {
-      // Përdor alert të ndryshëm për web dhe mobile
       if (Platform.OS === 'web') {
         window.alert('Ju lutem plotësoni kredencialet e duhura');
       } else {
@@ -30,14 +33,13 @@ export default function SignIn() {
       return;
     } 
      try {
-       // Merr array e user-ave aktual
     const usersJSON = await AsyncStorage.getItem('users');
     const users = usersJSON ? JSON.parse(usersJSON) : [];
 
-    // Kontrollo nëse email ekziston
+    
     const emailExists = users.some(u => u.email === trimmedEmail);
       if (emailExists) {
-        // Email ekziston -> alert dhe rute te Login
+        
         if (Platform.OS === 'web') {
           window.alert('Ky email është regjistruar tashmë! Shko te Login.');
         } else {
@@ -49,11 +51,15 @@ export default function SignIn() {
         return;
       }
 
-      // Shto userin e ri
-    const newUser = { email: trimmedEmail, username: trimmedUsername, password: trimmedPassword };
+       const newUser = { 
+         email: trimmedEmail, 
+         username: trimmedUsername, 
+         password: trimmedPassword, 
+         favourites: [] 
+       };
     users.push(newUser);
 
-    // Ruaj array-in e përditësuar në AsyncStorage
+
     await AsyncStorage.setItem('users', JSON.stringify(users));
 
       if (Platform.OS === 'web') {
@@ -64,7 +70,7 @@ export default function SignIn() {
       console.log('Sotrage pas regjistrimit te nje useri te ri');
       showAllStorage();
 
-      // Rute te Login pas regjistrimit
+     
       navigation.navigate('Login');
 
     } catch (error) {
