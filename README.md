@@ -93,7 +93,8 @@ Klikimi ne TouchableOpacity e menaxoj me ane te funksionit `handlePress(id)` qe 
 
 Po ashtu ne homepage jane edhe imazhet e logos dhe settins qe jane te klikueshme dhe repsektivisht ridrejtojne userin ne homepage dhe setting page.
 
-<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/96e59209-568c-4847-b60d-b11e94edc5cb" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/ce44a6d8-f96c-4fb1-bd39-26a5fbc277bf" />
+
 
 **Detail.js**
 Detail eshte komponenti qe pas klikimit t ne te nje karte ne homepage, useri ridjetohe ne kete faqe dhe jep te gjitha detajet e recetes se klikuar.
