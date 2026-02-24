@@ -41,6 +41,7 @@ Qellimi i aplikacionit eshte te ofroje nje eksperience te personalizuar dhe intu
 
 
    /settings
+   
           fav.js
           settings.js
 
