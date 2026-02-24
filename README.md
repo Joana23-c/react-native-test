@@ -65,7 +65,7 @@ Me kete komponent menaxhoj regjistrimin e perdouesve te aplikacionit. Kam perdor
 
 Me ane te **TouchableOpacity** kam krijuar nje link qe useri te mund te ridrejtohet ne log-in nese ka nje account.
 
-<img width="956" height="902" alt="image" src="https://github.com/user-attachments/assets/55351cc4-f9a1-438a-b72d-3336d9e19ac4" />
+<img width="302" height="331" alt="image" src="https://github.com/user-attachments/assets/55351cc4-f9a1-438a-b72d-3336d9e19ac4" />
 
 
 **Login.js**
